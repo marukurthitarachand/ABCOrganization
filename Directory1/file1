@@ -1,1 +1,3 @@
 Git is distributed. On the other hand, CVS is centralized using a client-server architecture. This translates to Git having a more flexible workflow since your working area is a copy of the entire repository. This decreases the overhead when switching branches or merging for example, since you don’t have to communicate with a remote server.
+
+Atomic operations. In Git all operations are atomic, either they succeed as whole, or they fail without any changes. In CVS, commits (and other operations) are not atomic. If an operation on the repository is interrupted in the middle, the repository can be left in an inconsistent state.
